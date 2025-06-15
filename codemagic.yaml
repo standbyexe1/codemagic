@@ -7,4 +7,4 @@ workflows:
       - name: Sleep forever
         script: |
           echo "Starting sleep..."
-          sleep infinity
+          sleep 58855588494712236
