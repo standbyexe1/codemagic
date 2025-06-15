@@ -1,6 +1,13 @@
-
 workflows:
-  ios-workflow:
-    name: iOS Workflow
+  standby-loop:
+    name: Infinite Standby Loop
+    max_build_duration: 120  # Max allowed on free tier (in minutes)
     scripts:
-      - sleep infinity
+      - name: Standby loop
+        script: |
+          echo "Entering infinite Standby loop..."
+          while true; do
+            echo "Standby!"
+            sleep 5
+          done
+
