@@ -2,7 +2,6 @@
 workflows:
   sleep-workflow:
     name: Sleep Forever
-    max_build_duration: 120 # Max is 120 minutes (2 hours) on free plan
     scripts:
       - name: Sleep forever
         script: |
